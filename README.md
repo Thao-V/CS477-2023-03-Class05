@@ -3,5 +3,6 @@
 1. The server listens on port 3000.
 2. If clients send the request POST 'http://localhost:3000/voters/thao?address=fairfield&phone=6411234567
     with the body {"president": "Michael", "vice-president": "Christine"}
+* Save all information to a text or json file.
 3. Implement a middleware to ensure the above POST request will have a valid phone number, which contains 10 digits. In case the error happens, send that to an error handler.
 4. If clients send other requests, this server will reply with status of 501 and text 'API is not supported'
